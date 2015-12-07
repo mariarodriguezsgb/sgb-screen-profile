@@ -1,0 +1,60 @@
+//Define any sass variables and styles here.
+//They may be overridden by the application using the screen.
+
+$myColor: #00dda0;
+$lightColor: #FFBB45;
+$boldColor: #943E09;
+$iconColor: white;
+$buttonColor: #FFBB45;
+
+.customHeader {
+  color: $myColor;
+}
+
+.thumbnail-container {
+  width:98px;
+  height: 106px;
+  background-color: $lightColor;
+  border: solid 6px $boldColor;
+  border-radius: 50%;
+  margin-top: 30px;
+  text-align: center;
+  color: $iconColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbnail {
+  font-size: 70px;
+}
+
+.setupinfo {
+  width: 65%;
+}
+
+.setup {
+  display: flex;
+  margin: 10px;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 2.5%;
+  height: 160px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.option_icon {
+  width: 50px;
+  margin: 2.5%;
+}
+
+.picbutton {
+  margin: 5vh 5vw;
+  background-color: $buttonColor;
+  width: 90vw;
+}

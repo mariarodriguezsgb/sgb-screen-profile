@@ -1,0 +1,27 @@
+<ion-view mz-screen view-title="{{ title | translate }}" class="viewbckg">
+    <ion-content>
+      <div class="setup">
+        <div class="thumbnail-container">
+          <!-- <img href="http://icons.iconarchive.com/icons/aha-soft/space/256/Galaxy-icon.png"> -->
+          <i class="thumbnail" ng-class="selectedIcon"></i>
+        </div>
+
+        <div class="card setupinfo">
+          <div class="item item-text-wrap">
+            <input type="text" placeholder="{{ph1}}">
+          </div>
+          <div class="item item-text-wrap">
+            <input type="text" placeholder="{{ph2}}">
+          </div>
+        </div>
+    </div>
+    <div ng-if="picoption">
+      <button class="button picbutton">
+        {{'pick_img' | translate}}
+      </button>
+    </div>
+    <div ng-if="iconsoption" class="options">
+      <a ng-repeat="icon in icons" ng-class="icon" ng-click="changeIcon(icon)" class="option_icon button button-icon icon"></a>
+    </div>
+    </ion-content>
+</ion-view>
